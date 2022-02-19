@@ -26,16 +26,29 @@
                         <input type="text" class="task-text" value="Task" readonly>
                     </div>
                     <div class="buttons">
-                        <button class="fa-solid fa-pen pen"></button>
-                        <button class="fas fa-trash trash"></button>
+                        <dfn title="Done"><button class="fa-solid fa-check"></button></dfn>
+                        <dfn title="Edit"><button class="fa-solid fa-pen pen"></button></dfn>
+                        <dfn title="Delete"><button class="fas fa-trash trash"></button></dfn>
                     </div>
                 </div>
                 <div class="footer">
-                        <span>You have 0 tasks</span>
+                        <span>You have 0 active tasks</span>
                 </div>
             </div>
         </section>
     </main>
+    <section class="tasks-done">
+        <h1>Tasks Done</h1>
+        <div class="done">
+            <div class="done-content">
+                <input type="text" class="done-text" value="Done" readonly>
+            </div>
+            <div class="done-buttons">
+                <dfn title="Delete"><button class="fas fa-trash trash"></button></dfn>
+                <dfn title="Done"><i class="fa-solid fa-clipboard-check"></i></dfn>
+            </div>
+        </div>
+    </section>
     </div>
     <script src="script.js"></script>
 </body>
