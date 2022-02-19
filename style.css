@@ -1,0 +1,114 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width:100%;
+    background-image: linear-gradient(230deg, #bbf0f3 0%, #f6d285 100%);
+    background-repeat: no-repeat;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto;
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(185, 248, 252);
+    border-radius: 20px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: #0a2351;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#task-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: -15px;
+}
+#new-task{
+    width: 100%;
+    background-color: rgb(10,35,81, 0.8);
+    padding: 16px;
+    border-radius: 16px;
+    color: #bbf0f3;
+    font-size: 15px;
+}
+#add-task{
+    color: #eed296;
+    font-size: 15px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #eed296 50%, #f1d79ae0 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#add-task:hover{
+    opacity: 0.7;
+}
+#add-task:active{
+    opacity: 0.5;
+}
+.task-list{
+    padding: 16px;
+}
+h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #0a2351;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(10,35,81, 0.8);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+#tasks .task .content .task-text{
+    color: gray;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    font-size: 15px;
+}
+#tasks .task .content .task-text:not(:read-only){
+    color: #bbf0f3;
+}
+#tasks .task .buttons .pen{
+    cursor: pointer;
+    color: #f6d285;
+    transition: 0.5s;
+}
+#tasks .task .buttons .trash{
+    cursor: pointer;
+    color: #bbf0f3;
+    transition: 0.5s;
+}
+#tasks .task button:hover{
+    opacity: 0.7;
+}
+#tasks .task button:active{
+    opacity: 0.5;
+}
+
+.footer{
+    color: #0a2351;
+}
