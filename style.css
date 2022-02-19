@@ -92,6 +92,11 @@ h2{
 #tasks .task .content .task-text:not(:read-only){
     color: #bbf0f3;
 }
+#tasks .task .buttons .check{
+    cursor: pointer;
+    color: #7CFC00;
+    transition: 0.5s;
+}
 #tasks .task .buttons .pen{
     cursor: pointer;
     color: #f6d285;
@@ -110,4 +115,17 @@ h2{
 }
 .footer{
     color: #0a2351;
+}
+.tasks-done{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.done{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(10,35,81, 0.8);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
 }
