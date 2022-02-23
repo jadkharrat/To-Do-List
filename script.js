@@ -1,4 +1,3 @@
-
 window.addEventListener("load", () => {
     const form = document.querySelector("#task-form");
     const input = document.querySelector("#new-task");
@@ -7,12 +6,12 @@ window.addEventListener("load", () => {
         e.preventDefault();
         
         var task = input.value;
-
+        // Check if the input is null
         if (!task) {
             alert("Please add a task");
             return;
         }
-        
+        // Creating the task layout
         const taskelement = document.createElement("div");
         taskelement.classList.add("task");
 
@@ -52,7 +51,8 @@ window.addEventListener("load", () => {
         tasks.appendChild(taskelement);
 
         input.value = "";
-
+        
+        // Changing the task's text with the edit button and saving
         edit.addEventListener("click", () => {
             if (edit.innerText.toLowerCase() == "edit"){
                 inputask.removeAttribute("readonly");
@@ -63,11 +63,11 @@ window.addEventListener("load", () => {
                 edit.innerText = "Edit";
             }
         });
-
+        // Delete the task
         dlt.addEventListener("click", () =>{
             tasks.removeChild(taskelement);
         });
-        
+        // Check the task when done
         check.addEventListener("click", () =>{
             tasks.removeChild(taskelement);
             const done = document.querySelector("#don");
